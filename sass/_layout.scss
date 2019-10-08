@@ -1,0 +1,64 @@
+.container {
+    max-width: 120rem; //this is the max width of the container if the screen could fit this
+    margin: 8rem auto; //this is the space between the container and the sides of the screen
+    background-color: var(--color-grey-light-2); //this is the color of the container if there were no content
+    box-shadow: var(--shadow-dark); // this is the shadow of the container, so the black blur around the edges 
+
+    min-height: 50rem;
+}
+
+.header {
+    height: 7rem; //height of the header
+    background-color: #fff; //color of the header, being the nav
+    border-bottom: 1px solid var(--color-grey-light-2); // this is the color of the border
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4rem;
+
+}
+
+.content {
+    display: flex; //sets the flex of the inside Classes/ID's 
+}
+
+.sidebar {
+    background-color: var(--color-grey-dark-1); //color of the entire color of this sidebar
+    flex: 0 0 18%; 
+    /*
+        * This is saying that is cannot grow and cannot shrink, but it takes up 185 of the 1005 of the flex box.. 
+        ! Since this is a percentage, if they window shrinks, the perfect of the box with stay the same but the box will shrink, meaing it will shrink  
+    */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hotelview {
+    background-color: #fff; //color of the entire color of this hotelview
+    flex: 1; //This "1" means it can flex to the rest of the space left, being the remaining 82% fo the flex box
+}
+
+.detail {
+    font-size: 1.4rem;
+    display: flex;
+    padding: 4.5rem;
+    background-color: var(--color-grey-light-1);
+    border-bottom: 1px solid var(--color-grey-light-2); // this is the color of the border
+}
+
+.description {
+    background-color: #fff;
+    box-shadow: 0 2rem 5rem rgba(0,0,0,.06);
+    padding: 3rem;
+    flex: 0 0 60%;
+    margin-right: 4.5rem;
+}
+
+.user-review {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
