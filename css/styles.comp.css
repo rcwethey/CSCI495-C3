@@ -70,7 +70,7 @@ body {
   background-color: var(--color-grey-dark-1);
   flex: 0 0 18%;
   /*
-        * This is saying that is cannot grow and cannot shrink, but it takes up 185 of the 1005 of the flex box.. 
+        * This is saying that is cannot grow and cannot shrink, but it takes up 18% of the 1005 of the flex box.. 
         ! Since this is a percentage, if they window shrinks, the perfect of the box with stay the same but the box will shrink, meaing it will shrink  
     */
   display: flex;
